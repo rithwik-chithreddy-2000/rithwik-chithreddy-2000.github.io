@@ -1,0 +1,25 @@
+<html>
+    <head>
+        <title>Test VR</title>
+        <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
+    </head>
+    <body>
+        <a-scene>
+            <a-sky src="images/backgroung.jpg"></a-sky>
+            <a-sound src="sounds/bounce.mp3" position="3 0 0" autoplay="true" loop="true" volume="2"></a-sound>
+            <a-sound src="sounds/bounce.mp3" position="-3 0 0" autoplay="true" loop="true" volume="2"></a-sound>
+            <a-sound src="sounds/bounce.mp3" position="0 3 0" autoplay="true" loop="true" volume="2"></a-sound>
+            <a-sound src="sounds/bounce.mp3" position="0 -3 0" autoplay="true" loop="true" volume="2"></a-sound>
+            <a-sound src="sounds/bounce.mp3" position="0 0 3" autoplay="true" loop="true" volume="2"></a-sound>
+            <a-sound src="sounds/bounce.mp3" position="0 0 -3" autoplay="true" loop="true" volume="2"></a-sound>
+            <a-sphere radius="0.1" position="-3 0 -3" color="saddlebrown">
+                <a-animation attribute="position"
+                    direction="alternate"
+                    dur="200"
+                    from="-3 0 -3"
+                    to="-3 2 -3"
+                    repeat="indefinite"></a-animation>
+            </a-sphere>
+        </a-scene>
+    </body>
+</html>
